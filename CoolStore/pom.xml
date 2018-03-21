@@ -6,12 +6,33 @@
   <artifactId>coolstore</artifactId>
   <version>1.0.0</version>
   <name>CoolStore</name>
-  <description></description>
+  <!-- <packaging>kjar</packaging> -->
+  <properties>
+    <version.org.kie>7.5.0.Final-redhat-4</version.org.kie>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-api</artifactId>
+      <version>${version.org.kie}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
       <name>Guvnor M2 Repo</name>
-      <url>http://localhost:8080/decision-central/maven2/</url>
+      <url>http://localhost:8080/business-central/maven2/</url>
     </repository>
   </repositories>
+  <!-- <build>
+    <plugins>
+      <plugin>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-maven-plugin</artifactId>
+        <version>${version.org.kie}</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build> -->
 </project>
