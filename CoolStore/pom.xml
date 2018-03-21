@@ -3,10 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.redhat</groupId>
-  <artifactId>coolstore-rules-container</artifactId>
+  <artifactId>coolstore</artifactId>
   <version>1.0.0</version>
   <name>CoolStore</name>
-  <!-- <packaging>kjar</packaging> -->
   <properties>
     <version.org.kie>7.5.0.Final-redhat-4</version.org.kie>
   </properties>
@@ -25,14 +24,4 @@
       <url>http://localhost:8080/business-central/maven2/</url>
     </repository>
   </repositories>
-  <!-- <build>
-    <plugins>
-      <plugin>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-maven-plugin</artifactId>
-        <version>${version.org.kie}</version>
-        <extensions>true</extensions>
-      </plugin>
-    </plugins>
-  </build> -->
 </project>
